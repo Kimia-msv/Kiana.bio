@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "poppins";
+  font-weight: 700;
+  src: url(../font/poppins/poppins-semibold-webfont.woff2) format("woff");
+}
+
+@font-face {
+  font-family: "poppins";
+  font-weight: 900;
+  src: url(../font/poppins/poppins-bold-webfont.woff2) format("woff");
+}
+
+@font-face {
+  font-family: "poppins";
+  font-weight: 600;
+  src: url(../font/poppins/poppins-medium-webfont.woff2) format("woff");
+}
+
+@font-face {
+  font-family: "poppins";
+  font-weight: 400;
+  src: url(../font/poppins/poppins-light-webfont.woff2) format("woff");
+}
+
+@font-face {
+  font-family: "poppins";
+  font-weight: 450;
+  src: url(../font/poppins/poppins-regular-webfont.woff2) format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "poppins", Helvetica, sans-serif;
+  color: var(--color_1F1F1F);
+}
+
+:root {
+  --color_1F1F1F: #1f1f1f;
+  --color_00897B: #00897b;
+  --color_D4D5DF: #d4d5df;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  /* color: var(--color_ffffff); */
+}
+
+img {
+  scale: 0.6;
+}
+
+/* back-btn  */
+.back_to_home {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 5px;
+}
+
+.back_to_home::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: 3px solid var(--color_00897B);
+  border-bottom: 3px solid var(--color_00897B);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.back_to_home {
+  color: var(--color_00897B);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ul {
+  list-style-position: outside;
+  padding-left: 30px;
+}
+
+li {
+  font-weight: 450;
+  font-size: 20px;
+}
+
+ol {
+  padding: 30px 25px;
+}
+
+ol li {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.container_site {
+  max-width: 1366px;
+  padding: 32px 120px;
+  margin: 0 auto;
+}
+
+.page {
+  height: 700px;
+}
+
+/* header */
+/* .main_header {
+  margin-top: 280px;
+} */
+
+.main_header_title {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  margin-top: 250px;
+}
+
+.main_header_title_bold {
+  margin-bottom: 80px;
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--color_00897B);
+}
+
+.colorful_box {
+  max-width: 1366px;
+  position: relative; /* باعث می‌شود که موقعیت تصویر نسبت به این عنصر قرار گیرد */
+  margin: 0 auto;
+}
+
+.gray_box {
+  width: 100%;
+  height: 300px;
+  background-color: var(--color_D4D5DF);
+}
+
+.colorful_box img {
+  position: absolute;
+  top: -42%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  max-width: 1366px;
+  height: auto;
+  z-index: 2;
+}
+
+/* main */
+.main_content_header {
+  margin: 40px 0px 50px;
+}
+
+.Overview {
+  color: var(--color_00897B);
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.about {
+  font-size: 36px;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.main_content_desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_content_desc_left,
+.main_content_desc_right {
+  width: 480px;
+}
+
+.main_content_desc_title {
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  font-weight: 900;
+}
+
+.main_content_desc_text {
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 450;
+  margin-top: 40px;
+}
+
+/* page-2 */
+.two {
+  display: flex;
+  flex-direction: column;
+}
+
+.two .main_content_desc_text {
+  width: 800px;
+}
+
+.two img {
+  width: 100%;
+  scale: 1;
+}
+
+/* page-3 */
+.three .main_content_desc_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.three .main_content_desc_text p {
+  width: 450px;
+}
+
+.three .main_content_desc_text img {
+  scale: 1;
+}
+
+/* page-4 */
+.four .main_content_desc {
+  display: flex;
+  align-items: center;
+  margin: -100px 0px 0px -121px;
+}
+
+.four .main_content_desc_text {
+  position: relative;
+  width: 430px;
+}
+
+.four .main_content_desc_left {
+  margin-left: -26px;
+}
+
+.four .main_content_desc_text::after {
+  content: "";
+  display: block;
+  height: 150px;
+  width: 8px;
+  background-color: var(--color_00897B);
+  position: absolute;
+  top: 19%;
+  left: -27px;
+}
+
+/* page-5 and page-6 and page-7 */
+.page_five_img img,
+.six img,
+.seven img {
+  width: 100%;
+  scale: 1;
+}
+
+.first_child {
+  padding: 40px 0px;
+}
+
+/* page-8 */
+.eight .main_content_desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eight .main_content_desc_text {
+  width: 450px;
+}
+
+.eight img {
+  margin-left: 0px;
+  margin-top: -108px;
+  width: 100%;
+  scale: 1;
+}
