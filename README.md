@@ -57,5 +57,3 @@ This project is licensed under the MIT License.
 ## 👩‍💻 Developer
 
 Designed and developed by **Kimia Moosavi**
-
-[GitHub](https://github.com/Kimia-msv)
